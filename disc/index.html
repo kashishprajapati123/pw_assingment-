@@ -4,108 +4,293 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind CSS Basics Assigment</title>
-    <link href="/disc/style.css" rel="stylesheet">
+    <title>Tailwind Assignment</title>
+    <link rel="stylesheet" href="style1.css">
 </head>
 
 <body>
-    1.
-    <!-- Q1. For this assignment module, your task is to create a blog webpage. To begin, in this coding challenge, you
-    need to import tailwind CSS into the project. You are expected to use only the typography properties
-    provided by tailwind CSS to achieve the desired output described below.  -->
+    <!-- Q1. Let’s say we need to design a website for a stock market broker website. You are tasked with
+    creating a landing page for a stock market broker website. Your team lead has assigned you the
+    initial responsibility of designing a straightforward navigation bar. Note that there should be no
+    custom CSS and the output must be achieved only using Tailwind CSS. -->
     <!-- Answer -->
-    <div class="text-center border-4 border-black p-5 m-5">
-        <h1 class="text-[25px] font-bold">The Real Leadership Lessons Of Steve Jobs</h1>
-        <p class="text-[13px] text-[#758283]">Six months after job's death, the author of his best-selling biography
-            identifies the practices that every CEO can try to emulate. <span class="text-black">by walter
-                Isaacson</span></p>
-    </div>
-2.
-    <!-- Q2.Moving forward with the design of our blog webpage, let's explore images, layouts, and borders. By utilining
-    the flex and border properties offered by tailwind CSS, aim to achieve the desired output as described
-    below. -->
-    <!-- Answer -->
-    <div class=" text-center border-4 border-black p-5 m-5">
-        <h1 class="text-[25px] font-bold">The Real Leadership Lessons Of Steve Jobs</h1>
-        <p class=" pt-1 text-[13px] text-[#758283]">Six months after job's death, the author of his best-selling
-            biography identifies the practices that every CEO can try to emulate. <span class="text-black">by walter
-                Isaacson</span></p>
-        <div class=" pt-3 ml-80 h-50 w-80 ">
-            <img class="ml-60 rounded-2xl"
-                src="https://th.bing.com/th?id=ALSTU097D6F77C2D9C2E4E148EB82028259202FFE643326848D23674F62BE650407CA&w=472&h=280&rs=2&o=6&oif=webp&dpr=1.3&pid=SANGAM"
-                alt="">
-        </div>
-    </div>
-3.
-    <!-- Q3. In this coding challenge, let's examine the fonts provided by tailwind CSS and explore some of the other text
-        properties. Utilise the properties offered by tailwind CSS to achieve the desired output described below. -->
-    <!-- Answer  -->
 
-    <div class=" text-center border-4 border-black p-5 m-5">
-        <h1 class="text-[25px] font-bold">The Real Leadership Lessons Of Steve Jobs</h1>
-        <p class=" pt-1 text-[13px] text-[#758283]">Six months after job's death, the author of his best-selling
-            biography identifies the practices that every CEO can try to emulate. <span class="text-black">by walter
-                Isaacson</span></p>
-        <div class=" pt-3 ml-80 h-50 w-80 ">
-            <img class="ml-60 rounded-2xl"
-                src="https://th.bing.com/th?id=ALSTU097D6F77C2D9C2E4E148EB82028259202FFE643326848D23674F62BE650407CA&w=472&h=280&rs=2&o=6&oif=webp&dpr=1.3&pid=SANGAM"
+    <nav class="flex justify-between m-0 bg-[#B4161B] w-full h-12">
+        <div class="flex mx-4 my-1">
+            <img class="h-10 mx-2 hover:cursor-pointer" src="https://cdn-icons-png.flaticon.com/128/2758/2758562.png"
+                alt="">
+            <p class="text-white font-bold text-[28px] ml-1 hover:cursor-pointer">LIQUID</p>
+        </div>
+        <img class="min-[501px]:hidden hover:cursor-pointer"
+            src="https://cdn.iconfinder.com/stored_data/1157252/128/png?token=1689589333-NNFB9Kd6cx3%2FY%2FZYqa1Zvikp6VZuPBNWWZdv7j%2BWjhs%3D"
+            alt="">
+        <div class="flex mx-2 my-1 max-[501px]:hidden">
+            <button
+                class="mr-2 text-white font-medium text-[14px] bg-green-600 px-3 rounded-sm hover:bg-green-700 duration-300 cursor-pointer"><a
+                    href="#">CREATE
+                    ACCOUNT</a></button>
+            <img class="h-10 mx-2 hover:cursor-pointer" src="https://cdn-icons-png.flaticon.com/128/149/149071.png"
                 alt="">
         </div>
-        <p class="text-left text-[#758283] font-mono p-5"><span class=" text-black font-700 text-[17px]">His saga is the
-                entrepreneurial creation myth</span> writ large: Steve Jobs cofounded Apple in his parents’
-            garage in 1976, was ousted in 1985, returned to rescue it from near bankruptcy in 1997, and by the time he
-            died,
-            in October 2011, had built it into the world’s most valuable company. Along the way he helped to transform
-            seven
-            industries: personal computing, animated movies, music, phones, tablet computing, retail stores, and digital
-            publishing. He thus belongs in the pantheon of America’s great innovators, along with Thomas Edison, Henry
-            Ford,
-            and Walt Disney. None of these men was a saint, but long after their personalities are forgotten, history
-            will
-            remember how they applied imagination to technology and business.</p>
-    </div>
-    </div>
-4.
-    <!-- Q4. In this coding challenge, let's exlore the different variations of borders offered in CSS. Using the border. -->
-    <!-- Answer -->
-    <div class=" border-4 pl-80 border-black p-5 m-5">
-        <div class=" ml-40 border-black border-t-0 border-r-0 border-b-0 border-4 p-2 ">
-            <p class="text-left">“The people who are crazy enough to think they can change the world are the ones who
-                do.” <br>
-                —Apple’s “Think Different” commercial, 1997.</p>
+    </nav>
+      <!-- Q2. Building upon the previous assignment, you now have to create a hero section for the landing
+page. This section should be eye-catching and grab the visitors' attention. Take a look at the image
+below for reference. -->
+  <!-- Answer -->
+
+    <section class="flex flex-col justify-around m-0 bg-[#410a0c] w-full h-full ">
+        <div class="flex justify-evenly py-40 max-[801px]:flex-col">
+            <div class="max-[801px]:text-center mb-10 mt-0">
+                <h2 class="text-white font-bold text-[45px] mt-10 ">Multi-requlated <br>global broker.</h2>
+                <p class="text-[#6e7377] font-medium text-[20px] my-7">A trusted destination for traders worldwide,
+                    <br>Authorised by FCA, ASIC & FSCA
+                </p>
+                <button
+                    class="mr-2 text-white font-medium text-[14px] h-10 border-2 animate-bounce border-green-600 px-3 rounded-md  hover:bg-green-600 duration-300 cursor-pointer"><a
+                        href="#">DISCOVER ACCOUNTS</a></button>
+            </div>
+            <div class="max-[801px]:m-auto">
+                <img src="https://www.uniskytechnologies.com/img/in-liquid-slide-2.svg" alt="">
+            </div>
+        </div>
+         <!-- Q3. In continuation of our previous task, where we successfully created a hero section for a landing
+page designed for a stock market broker, it is now time to showcase some statistical information.
+Below are the reference images for your convenience. -->
+<!-- Answer -->
+        <div class=" flex justify-center mb-20 max-[1100px]: my-1">
+            <div class="flex justify-evenly max-[1100px]:flex-col my-1">
+                <div class="flex max-[1100px]:my-5 mx-3">
+                    <p class="font-medium text-[30px] text-[#d36165] mr-2">Alphabet</p>
+                    <button
+                        class=" text-black font-medium text-[16px] h-10 w-29 mt-30 bg-green-600 px-7 rounded-sm hover:bg-green-700 duration-300 cursor-pointer"><a
+                            href="#">^ 1,740.05</a></button>
+                </div>
+                <div class="flex max-[1200px]:my-5 mx-3">
+                    <div class="flex">
+                        <img class="h-7 mt-2" src="https://cdn-icons-png.flaticon.com/128/732/732221.png" alt="">
+                        <p class="font-medium text-[30px] text-[#6e7377] mx-2">Microsoft</p>
+                    </div>
+                    <button
+                        class=" text-black font-medium text-[16px] h-10 w-29 mt-30 bg-[#d36165] px-7 rounded-sm hover:bg-[#934346] duration-300 cursor-pointer"><a
+                            href="#">^ 1,740.05</a></button>
+                </div>
+                <div class="flex max-[1200px]:my-5 mx-3">
+                    <p class="font-bold text-[30px] text-[#3e5fb7] mx-2">facebook</p>
+                    <button
+                        class=" text-black font-medium text-[16px] h-10 w-29 mt-30 bg-green-600 px-7 rounded-sm hover:bg-green-700 duration-300 cursor-pointer"><a
+                            href="#">^ 1,740.05</a></button>
+                </div>
+                <div class="flex max-[1200px]:mt-5 mx-3 h-20">
+                    <img class="h-40 w-24 pb-24 mx-1"
+                        src="https://cdn.iconfinder.com/stored_data/1153534/128/png?token=1689589718-QC9g2mOYle1xPbwOkM7Jhks4SxcQScAsOnItxnQlx7I%3D"
+                        alt="">
+                    <button
+                        class=" text-black font-medium text-[16px] h-10 w-29 mt-30 bg-[#d36165] px-7 rounded-sm hover:bg-[#934346] duration-300 cursor-pointer"><a
+                            href="#">^ 1,740.05</a></button>
+                </div>
+                <div class="flex  max-[1200px]:m-0">
+                    <p class="font-bold italic text-[30px] text-[#6e7377] mx-2">TESLA</p>
+                    <button
+                        class=" text-black font-medium text-[16px] h-10 w-29 bg-green-600 px-7 rounded-sm hover:bg-green-700 duration-300 cursor-pointer"><a
+                            href="#">^ 1,740.05</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+  <!-- Q4 . Building upon the previous task, it is crucial to incorporate informative blogs into a stock market
+webpage. For this assignment, we will focus on adding blog cards to enhance the content. Below are
+the reference images for your convenience. -->
+
+    <section class=" m-0 bg-[#410a0c] w-full h-full max-[801px]:flex-col">
+        <div class="flex justify-between mx-10 max-[600px]:flex-col">
+            <p class="text-white font-medium text-[30px] mt-10 ">Save time. Get <span
+                    class="text-green-600 font-medium text-[30px] mt-10 ">higher return.</span><br>Multipl wealth.</p>
+            <button
+                class="mr-2 mt-16 text-white font-medium text-[14px] h-10 border-2 border-green-600 px-3 rounded-md  hover:bg-green-600 duration-300 animate-pulse cursor-pointer"><a
+                    href="#">FIND OUT MORE ></a></button>
+        </div>
+        <div class="flex justify-evenly w-12/12 h-12/12 pb-20 mt-10 max-[600px]:flex-col">
+            <div class="bg-[#812326] rounded-lg pl-10 pb-10 pr-2 w-3/12 h-12/12 max-[801px]:w-10/12 ml-10 mb-10">
+                <img src="https://www.uniskytechnologies.com/img/in-liquid-object-1.svg" alt="">
+                <p class="text-white font-medium text-[30px] mt-10 ">Various Assets</p>
+                <p class="text-[#828485] font-medium text-[17px] ">Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit. Quam iure doloremque assumenda distinctio,
+                    animi placeat eos magni. Itaque, explicabo? Ratione accusamus, distinctio nam ullam enim veritatis
+                    illo vel soluta sapiente?</p>
+            </div>
+            <div class="bg-[#812326] rounded-lg pl-10 pb-10 pr-2 w-3/12 h-12/12 max-[801px]:w-10/12 ml-10 mb-10">
+                <img src="https://www.uniskytechnologies.com/img/in-liquid-object-3.svg" alt="">
+                <p class="text-white font-medium text-[30px] mt-10 ">Market analysis</p>
+                <p class="text-[#828485] font-medium text-[17px] ">Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Voluptate nisi expedita fugiat sapiente aut
+                    quia dolorum delectus earum excepturi blanditiis numquam laborum dolorem eligendi, omnis vero ea
+                    iste.</p>
+            </div>
+            <div class="bg-[#812326] rounded-lg pl-10 pb-10 pr-2 w-3/12  h-12/12 max-[801px]:w-10/12 ml-10 ">
+                <img src="https://www.uniskytechnologies.com/img/in-liquid-object-2.svg" alt="">
+                <p class="text-white font-medium text-[30px] mt-10 ">Enhanced tools</p>
+                <p class="text-[#828485] font-medium text-[17px]">Lorem ipsum, dolor sit amet consectetur adipisicing
+                    elit. Minima mollitia voluptas rem iure quia
+                    aperiam maxime voluptate, officiis natus suscipit ad enim. Rerum amet porro maxime Lorem ipsum dolor
+                    sit.
+                    Lorem ipsum dolor sit amet.
+                </p>
+            </div>
+        </div>
+    </section>
+     <!-- Q5. Let's continue working on the previous assignment. This time, we will focus on designing a section that
+highlights the different features offered. Below are some reference images to guide us. -->
+  <!-- Answer -->
+
+    <fieldset class="border-4 border-red-400 mx-5 my-20 rounded-lg">
+        <legend class="text-center text-2xl font-medium text-red-500 px-3 animate-pulse">Simple step to start trade.
+        </legend>
+        <div class="w-full flex justify-evenly md:py-20 max-[768px]:pt-5 flex-wrap">
+            <div class="flex items-center flex-col  max-[768px]:w-full max-[768px]:mb-8">
+                <p
+                    class="border-4 text-center rounded-full h-10 flex justify-center items-center w-10 border-red-400 text-red-500 font-medium">
+                    1</p>
+                <p class="font-medium text-gray-600 mt-2">Regester account</p>
+            </div>
+            <div class="flex items-center flex-col max-[768px]:w-full max-[768px]:mb-8">
+                <p
+                    class="border-4 text-center rounded-full h-10 flex justify-center items-center w-10 border-red-400 text-red-500 font-medium ">
+                    2</p>
+                <p class="font-medium text-gray-600 mt-2">Fund your account</p>
+            </div>
+            <div class="flex items-center flex-col max-[768px]:w-full max-[768px]:mb-8">
+                <p
+                    class="border-4 text-center rounded-full h-10 flex justify-center items-center w-10 border-red-400 text-red-500 font-medium ">
+                    3</p>
+                <p class="font-medium text-gray-500 mt-2">Start your trade</p>
+            </div>
+        </div>
+    </fieldset>
+    <!-- Q6. Building upon the previous assignment, we will now tackle a coding challenge to design a section that
+guides users through the initial steps to get started. Below are some reference images to guide us. -->
+<!-- Answer  -->
+    <div class="flex flex-wrap w-12/12 h-12/12 m-2 rounded-xl px-10 max-[798px]:flex-col">
+        <div class="w-6/12 flex max-[798px]:w-full">
+            <img class="h-10 mt-7 rounded-full"
+                src="https://cdn2.iconfinder.com/data/icons/project-management-5-2/68/224-64.png" alt="">
+            <div class="ml-4 mt-5">
+                <p class="font-medium text-[25px] my-1">Expert service</p>
+                <p class="font-medium my-1 text-[#626364] w-">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nemo, adipisci! Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Modi, ipsa?</p>
+            </div>
+        </div>
+        <div class="w-6/12 flex max-[798px]:w-full">
+            <img class="h-10 mt-7 rounded-full"
+                src="https://cdn2.iconfinder.com/data/icons/business-dual-color-glyph-set-8/128/stamp-64.png" alt="">
+            <div class="ml-4 mt-5">
+                <p class="font-medium text-[25px] my-1">Fully Regulated</p>
+                <p class="font-medium my-1 text-[#626364]">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nemo, adipisci! Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Modi, ipsa?</p>
+            </div>
+        </div>
+        <div class="w-6/12 flex max-[798px]:w-full">
+            <img class="h-10 mt-7 rounded-full"
+                src="https://cdn3.iconfinder.com/data/icons/business-round-set-1/128/FINANCIAL_GROWTH-64.png" alt="">
+            <div class="ml-4 mt-5">
+                <p class="font-medium text-[25px] my-1">Financial strength</p>
+                <p class="font-medium my-1 text-[#626364]">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nemo, adipisci! Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Modi, ipsa?</p>
+            </div>
+        </div>
+        <div class="w-6/12 flex max-[798px]:w-full">
+            <img class="h-10 mt-7 rounded-full"
+                src="https://cdn0.iconfinder.com/data/icons/hosting-service/256/integrated-cnd-global-connected-64.png"
+                alt="">
+            <div class="ml-4 mt-5">
+                <p class="font-medium text-[25px] my-1">Integrated support</p>
+                <p class="font-medium my-1 text-[#626364]">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nemo, adipisci! Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Modi, ipsa?</p>
+            </div>
+        </div>
+         <!-- Q7. In our ongoing assignment, we'll now work on a coding challenge to create a section that displays news
+articles. Below are some reference images to guide us. -->
+<!-- Answer  -->
+        <div class="flex justify-start py-3 px-3 mt-10">
+            <h1 class="font-bold text-3xl text-black ">Stay ahead of the curve.</h1>
+        </div>
+        <div class="flex justify-evenly max-[768px]:flex-col">
+            <div class="flex py-10 px-3">
+                <div class="flex flex-col items-center">
+                    <p class="rotate-90 font-bold text-red-600  mb-5">NEWS</p>
+                    <div class="border-2 border-red-600 w-0 h-40"></div>
+                </div>
+                <div class="flex flex-col justify-end items-start ">
+                    <p class="font-medium text-lg">Well Street cautions on 'frothy' stocks, warn bitcoin bubble</p>
+                    <p class="text-[#00000099] text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Placeat facilis repellendus illo min</p>
+                    <button class="font-bold text-sm my-3">Read more --></button>
+                </div>
+            </div>
+            <div class="flex py-10 px-3">
+                <div class="flex flex-col items-center">
+                    <p class="rotate-90 font-bold text-red-600 mb-5">NEWS</p>
+                    <div class="border-2 border-red-600 w-0 h-40"></div>
+                </div>
+                <div class="flex flex-col justify-end items-start">
+                    <p class="font-medium text-lg">Well Street cautions on 'frothy' stocks, warn bitcoin bubble</p>
+                    <p class="text-[#00000099] text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Placeat facilis repellendus illo min</p>
+                    <button class="font-bold text-sm my-3">Read more --></button>
+                </div>
+            </div>
+            <div class="flex py-10 px-3">
+                <div class="flex flex-col items-center">
+                    <p class="rotate-90 font-bold text-red-600 mb-5">NEWS</p>
+                    <div class="border-2 border-red-600 w-0 h-40"></div>
+                </div>
+                <div class="flex flex-col justify-end items-start">
+                    <p class="font-medium text-lg">Well Street cautions on 'frothy' stocks, warn bitcoin bubble</p>
+                    <p class="text-[#00000099] text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Placeat facilis repellendus illo min</p>
+                    <button class="font-bold text-sm my-3">Read more --></button>
+                </div>
+            </div>
         </div>
     </div>
-5.
-<!-- Q5. Continuing with the design of our blog webage, let's now delve into the grid layout. Utilize the grid layout proerties provided by tailwind CSS to achieve the desired output described below. -->
-<!-- Answer  -->
-<div class=" border-4  border-black p-5 m-5">
-    <div class="ml-80 border-black border-t-0 border-r-0 border-b-0 border-4 p-2 ">
-        <p class="text-left">“The people who are crazy enough to think they can change the world are the ones who
-            do.” <br>
-            —Apple’s “Think Different” commercial, 1997.</p>
-    </div>
-    <div class="flex mx-20 my-3">
-        <p class="ml-0 pl-0  p-5 mx-40 font-mono  text-[#758283] ">One of the last times I saw him, after I had finished writing most of the book, I asked him again about his tendency to be rough on people. “Look at the results,” he replied. “These are all smart people I work with, and any of them could get a top job at another place if they were truly feeling brutalized. But they don’t.” Then he paused for a few moments and said, almost wistfully, “And we got some amazing things done.” Indeed, he and Apple had had a string of hits over the past dozen years that was greater than that of any other innovative company in modern times: iMac, iPod, iPod nano, iTunes Store, Apple Stores, MacBook, iPhone, iPad, App Store, OS X Lion—not to mention every Pixar film. And as he battled his final illness, Jobs was surrounded by an intensely loyal cadre of colleagues who had been inspired by him for years and a very loving wife, sister, and four children.</p>
-        <img class="rounded-lg" src="https://th.bing.com/th/id/OIP.QhFKOhiontp5m9fzxgSSpgHaFj?w=251&h=188&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
-    </div>
-</div>
-6.
-<!-- Q6. Sometimes, instead of using static images, CSS can provide a more flexible solution. One such e1amle is
-designing a default profile picture using the first letter of the user's name. In this coding challenge, utilize
-tailwind CSS proerties to achieve the desired output described below. -->
-<!-- Answer  -->
-<div class="p-5 m-5 border-4 border-black flex  justify-center">
-    <h1 class="mr-10 bg-green-300 m-5 px-4 py-3 font-bold text-[18px] rounded-full">M</h1>
-    <p class="ml-10 mt-2 text-[#758283] font-mono">Water Isaacson, The CEO of the Aspen Institute, is the <br> author of steve jobs and of biographies of Henry Kissinger, <br>Benjamin Frankin, and Albert Einstein.</p>
-</div>
-7.
-<!-- Q7.To finalize the design of our blog webage, it is crucial to incororate a subscrition section that can be utilized for marketing puroses. In this coding challenge, try to add a subscription section following the secifications illustrated in the provided image. -->
-<!-- Answer  -->
-<div class="p-5 m-5 border-4 border-black bg-[#242b2e] text-center">
-    <h1 class="text-[#CAD5E2] font-bold text-[30px] py-2">Subscribe To Our NewsLetter</h1>
-    <input class="w-11/12 h-10 px-4 rounded" type="text" placeholder="Enter Your Email ID"><br>
-    <button class="py-2 px-5 h-10 bg-green-500 font-bold rounded text-[#242B2E] my-4"><a href="#">Subscribe Now</a></button>
-</div>
+    <!-- Q8. Moving forward with our previous assignment, we now have a coding challenge to design the final
+component of the landing page, which is the footer section. Below are some reference images to guide us. -->
+<!-- Answer -->
+    <footer class="flex justify-between bg-gray-800 px-4 py-6 max-[768px]:flex-col">
+        <div class="flex max-[768px]:mb-10">
+            <img class="h-10 mx-2 hover:cursor-pointer" src="https://cdn-icons-png.flaticon.com/128/2758/2758562.png"
+                alt="">
+            <p class="text-white font-bold text-[28px] ml-1 hover:cursor-pointer">LIQUID</p>
+        </div>
+        <div class="flex text-white my-2 max-[768px]:flex-col mx-3m my-20">
+            <div class="mr-16 text-center max-[768px]:mb-10">
+                <h1 class="text-white font-medium text-[22px] m-2 mb-5 max-[768px]:text-left hover:cursor-pointer">
+                    MARKETS</h1>
+                <p class="text-[#6e7377] font-medium text-[17px] my-2 max-[768px]:text-left">Web Platform</p>
+                <p class="text-[#6e7377] font-medium text-[17px] my-2 max-[768px]:text-left">Trading Apps</p>
+                <p class="text-[#6e7377] font-medium text-[17px] my-2 max-[768px]:text-left">Meta Trader 5</p>
+                <p class="text-[#6e7377] font-medium text-[17px] my-2 max-[768px]:text-left">Compare Features</p>
+            </div>
+            <div class="mr-16 text-center max-[768px]:mb-10">
+                <h1 class="text-white font-medium text-[22px] m-2 mb-5 max-[768px]:text-left hover:cursor-pointer">
+                    ACCOUNT TYPES</h1>
+                <p class="text-[#6e7377] font-medium text-[17px] my-2 max-[768px]:text-left">Demo account</p>
+                <p class="text-[#6e7377] font-medium text-[17px] my-2 max-[768px]:text-left">Standard account</p>
+                <p class="text-[#6e7377] font-medium text-[17px] my-2 max-[768px]:text-left">ECN account</p>
+                <p class="text-[#6e7377] font-medium text-[17px] my-2 max-[768px]:text-left">Islamic account</p>
+            </div>
+            <div class="mr-16 text-center max-[768px]:mb-10">
+                <h1 class="text-white font-medium text-[22px] m-2 mb-5 max-[768px]:text-left hover:cursor-pointer">LEARN
+                    TO TRADE</h1>
+                <p class="text-[#6e7377] font-medium text-[17px] my-2 max-[768px]:text-left">News and trade ideas</p>
+                <p class="text-[#6e7377] font-medium text-[17px] my-2 max-[768px]:text-left">Trading strategy</p>
+                <p class="text-[#6e7377] font-medium text-[17px] my-2 max-[768px]:text-left">Forex trading course</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
